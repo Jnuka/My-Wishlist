@@ -15,7 +15,7 @@ export const cardsJson = [
     "img": "./../../assets/img/gifts/03.PNG",
     "type": "books",
     "title": "Сказания Древней Японии. Мифы и легенды. Коллекционное",
-    "description": "https://www.wildberries.ru/catalog/22368498/detail.aspx?targetUrl=SN",
+    "description": "https://www.wildberries.ru/catalog/214203910/detail.aspx?targetUrl=SN",
   },
   {
     "img": "./../../assets/img/gifts/04.PNG",
