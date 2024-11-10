@@ -1,0 +1,77 @@
+html {
+  font-size: 10px;   
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Montserrat-SemiBold';
+  color: $color-dark;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+h1 {
+  @include font($size: 3.2rem, $height: 48px);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  @include font($size: 2.4rem, $height: 36px);
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  @include font($size: 1.6rem, $height: 24px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4 {
+  @include font($size: 1.2rem, $height: 16px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  font-family: 'Montserrat-Regular';
+  @include font($size: 1.6rem, $height: 24px, $weight: 400);
+  margin: 0;
+}
+
+.action-large {
+  @include font($size: 2.4rem, $height: 36px);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.action-small {
+  @include font($size: 1.2rem, $height: 16px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slider-text {
+  font-family: 'Montserrat-SemiBold';
+  @include font($size: 8.0rem, $height: 8.0rem);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.caption {
+  font-family: 'Allura';
+  // font-family: 'Bella-Script';
+  @include font($size: 2.4rem, $height: 24px, $weight: 400);
+  letter-spacing: 0.05em;
+  margin: 0;
+}

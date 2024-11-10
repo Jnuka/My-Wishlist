@@ -1,0 +1,75 @@
+.journey {
+  &__wrapper { 
+    background-color: $color-primary;
+    background-image: url(./../../../assets/img/backgrounds/bg-forest.png), url(./../../../assets/img/backgrounds/bg-snow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0, -82px 0px;
+    border-radius: 0 0 20px 20px;
+    padding: 0;
+    @include media-laptop {
+      background-position: 50% 0;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 180px 0;
+    color: $color-static-white;
+  }
+  &__title {
+    max-width: 426px;
+    text-align: center;
+  }
+  &__button {
+    border-radius: 20px;
+    padding: 20px 32px;
+    background-color: $color-dark;
+    color: $color-static-white;
+    text-decoration: none;
+    @extend %transition;
+    @media (hover:hover) {
+      &:hover {
+        background-color: $color-static-white;
+        color: $color-dark;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: $color-static-white;
+  }
+  &__timer {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    background-color: rgba($color:$color-static-white, $alpha: 0.4);
+    border-radius: 20px;
+    padding: 8px 12px 12px 12px;
+  }
+  &__time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 16px;
+      height: 20px;
+      width: 1px;
+      background-color: rgba($color: $color-static-white, $alpha: 0.4);
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

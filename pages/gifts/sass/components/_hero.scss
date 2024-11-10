@@ -1,0 +1,74 @@
+.hero {
+  &__wrapper {
+    background-color: $color-primary;
+    border-radius: 0 0 20px 20px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 60px 0;    
+    padding-top: 0;
+  }
+  &__title {
+    max-width: 426px;
+    text-align: center;
+    color: $color-static-white;
+  }
+  &__tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-static-white;
+    gap: 8px;
+    @include media-tablet-max {
+      gap: 0;
+      padding: 0 5px;
+    }
+    @include media-tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+  &__tag {
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    @extend %transition;
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $color-static-white, $alpha: 0.2);
+      }
+    }
+    @include media-mobile-max {
+      padding: 12px 8px;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    @include media-laptop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include media-tablet-max {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-mobile-max {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.active {
+  background-color: rgba($color: $color-static-white, $alpha: 0.2);
+  cursor: default;
+  @extend %transition;
+  @media (hover:hover) {
+    &:hover {
+      color: $color-static-white;
+    }
+  }
+}
