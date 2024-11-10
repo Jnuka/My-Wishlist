@@ -677,7 +677,7 @@ p {
   height: 230px;
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 0 50px;
+  padding: 10px 50px;
 }
 .modal__text {
   display: flex;
