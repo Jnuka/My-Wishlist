@@ -105,7 +105,13 @@ export const cardsJson = [
   {
     "img": "./../../assets/img/gifts/18.PNG",
     "type": "clothes",
-    "title": "косметичка маленькая в сумку на магните",
+    "title": "Косметичка маленькая в сумку на магните",
     "description": "https://www.wildberries.ru/catalog/98507954/detail.aspx?targetUrl=SN",
+  },  
+  {
+    "img": "./../../assets/img/gifts/19.PNG",
+    "type": "books",
+    "title": "Книга рецептов аниме Хаяо Миядзаки и студии «Гибли»",
+    "description": "https://www.wildberries.ru/catalog/194009931/detail.aspx?targetUrl=SN",
   },  
 ];
