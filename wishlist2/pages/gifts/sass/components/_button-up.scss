@@ -1,0 +1,22 @@
+.btn-up {
+  position: fixed;
+  padding: 0;
+  border: 1px solid $color-primary;
+  bottom: 8px;
+  right: 8px;
+  opacity: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  background-color: $color-static-white;
+  background-image: url('./../../../assets/img//icons/arrow-up.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 16px;
+  @extend %transition;
+  cursor: pointer;
+  &-hide {
+    display: none;
+    opacity: 0;
+  }
+}

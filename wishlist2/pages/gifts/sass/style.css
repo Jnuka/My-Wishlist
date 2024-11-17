@@ -1,0 +1,728 @@
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./../../../assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./../../../assets/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("./../../../assets/fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Allura";
+  src: url("./../../../assets/fonts/Allura-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Allura-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bella-Script";
+  src: url("./../../../assets/fonts/BellaScript.woff2") format("woff2"), url("./../../../assets/fonts/BellaScript.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.modal__description, .modal, .btn-up, .journey__button, .card__title, .card, .main-screen__button, .active, .hero__tag {
+  transition: all 0.3s ease-out;
+}
+
+@keyframes modal-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat-SemiBold";
+  color: #181C29;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 48px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 36px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 16px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  font-family: "Montserrat-Regular";
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.action-large {
+  font-size: 2.4rem;
+  line-height: 36px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.action-small {
+  font-size: 1.2rem;
+  line-height: 16px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slider-text {
+  font-family: "Montserrat-SemiBold";
+  font-size: 8rem;
+  line-height: 8rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.caption {
+  font-family: "Allura";
+  font-size: 2.4rem;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 82px;
+}
+@media (max-width: 1285px) {
+  .wrapper {
+    padding: 0 8px;
+  }
+}
+
+.hero__wrapper {
+  background-color: #FF4646;
+  border-radius: 0 0 20px 20px;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 60px 0;
+  padding-top: 0;
+}
+.hero__title {
+  max-width: 426px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero__tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 8px;
+}
+@media (max-width: 1045px) {
+  .hero__tags {
+    gap: 0;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__tags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+}
+.hero__tag {
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .hero__tag:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@media (max-width: 715px) {
+  .hero__tag {
+    padding: 12px 8px;
+  }
+}
+.hero__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+@media (max-width: 1285px) {
+  .hero__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1045px) {
+  .hero__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 715px) {
+  .hero__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+@media (hover: hover) {
+  .active:hover {
+    color: #FFFFFF;
+  }
+}
+
+.main {
+  margin: 20px 0;
+}
+
+.main-screen__wrapper {
+  background-color: #FF4646;
+  background-image: url(./../../../assets/img/backgrounds/bg-snow.png), url(./../../../assets/img/backgrounds/bg-ball.png), url(./../../../assets/img/backgrounds/bg-garland.png);
+  background-repeat: no-repeat;
+  background-size: cover, cover, contain;
+  background-position: 0, 50% 0, 0 0;
+  border-radius: 20px 20px 0 0;
+  padding: 0;
+}
+@media (max-width: 1285px) {
+  .main-screen__wrapper {
+    background-position: 0, 50% 0, 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .main-screen__wrapper {
+    background-position: 50% 0, 50% 0, 0 0;
+  }
+}
+.main-screen__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 180px 0;
+}
+.main-screen__upper-title {
+  color: #FFFFFF;
+}
+.main-screen__title {
+  max-width: 430px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.main-screen__button {
+  border-radius: 20px;
+  padding: 20px 32px;
+  background-color: #181C29;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+@media (hover: hover) {
+  .main-screen__button:hover {
+    background-color: #FFFFFF;
+    color: #181C29;
+  }
+}
+.main-screen__sub-title {
+  color: #FFFFFF;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 310px;
+  height: 342px;
+  background-color: #ECF3F8;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .card:hover .card__title {
+    color: #FF4646;
+  }
+}
+.card__image {
+  max-height: 230px;
+  max-width: 310px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 10px;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+.card__title {
+  height: 48px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+}
+.card__handwork {
+  color: #4361FF;
+}
+.card__kitchen {
+  color: #FF43F7;
+}
+.card__books {
+  color: #06A44F;
+}
+.card__clothes {
+  color: #a6ff00;
+}
+.card__home {
+  color: #1e2413;
+}
+
+.card-hidden {
+  display: none;
+}
+
+.journey__wrapper {
+  background-color: #FF4646;
+  background-image: url(./../../../assets/img/backgrounds/bg-forest.png), url(./../../../assets/img/backgrounds/bg-snow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0, -82px 0px;
+  border-radius: 0 0 20px 20px;
+  padding: 0;
+}
+@media (max-width: 1285px) {
+  .journey__wrapper {
+    background-position: 50% 0;
+  }
+}
+.journey__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 180px 0;
+  color: #FFFFFF;
+}
+.journey__title {
+  max-width: 426px;
+  text-align: center;
+}
+.journey__button {
+  border-radius: 20px;
+  padding: 20px 32px;
+  background-color: #181C29;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .journey__button:hover {
+    background-color: #FFFFFF;
+    color: #181C29;
+  }
+}
+.journey__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #FFFFFF;
+}
+.journey__timer {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 8px 12px 12px 12px;
+}
+.journey__time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.journey__time::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 16px;
+  height: 20px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.journey__time:last-child::after {
+  display: none;
+}
+
+.btn-up {
+  position: fixed;
+  padding: 0;
+  border: 1px solid #FF4646;
+  bottom: 8px;
+  right: 8px;
+  opacity: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  background-image: url("./../../../assets/img//icons/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 16px;
+  cursor: pointer;
+}
+.btn-up-hide {
+  display: none;
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 28, 41, 0.8);
+  cursor: pointer;
+}
+
+.modal {
+  animation-name: modal-animation;
+  animation-duration: 1s;
+}
+.modal__wrapper {
+  padding: 0 8px;
+}
+.modal__content {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+  background-color: #ECF3F8;
+  cursor: default;
+}
+@media (max-width: 715px) {
+  .modal__content {
+    max-width: 365px;
+  }
+}
+.modal__button {
+  position: absolute;
+  background-image: url(./../../../assets/img/icons/close.svg);
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  right: 12px;
+  top: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+.modal__image {
+  height: 230px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 10px 50px;
+}
+.modal__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px;
+}
+.modal__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal__description {
+  font-family: "Montserrat-Regular";
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  border-radius: 20px;
+  padding: 15px 15px;
+  background-color: #181C29;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+@media (hover: hover) {
+  .modal__description:hover {
+    background-color: #FF4646;
+    color: #FFFFFF;
+  }
+}
+.modal__handwork {
+  color: #4361FF;
+}
+.modal__kitchen {
+  color: #FF43F7;
+}
+.modal__books {
+  color: #06A44F;
+}
+.modal__clothes {
+  color: #a6ff00;
+}
+.modal__home {
+  color: #1e2413;
+}/*# sourceMappingURL=style.css.map */

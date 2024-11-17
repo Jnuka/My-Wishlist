@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('./../../../assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('./../../../assets/fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('./../../../assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+      url('./../../../assets/fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Allura';
+  src: url('./../../../assets/fonts/Allura-Regular.woff2') format('woff2'),
+      url('./../../../assets/fonts/Allura-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bella-Script';
+  src: url('./../../../assets/fonts/BellaScript.woff2') format('woff2'),
+      url('./../../../assets/fonts/BellaScript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+%transition {
+  transition: all .3s ease-out;
+}
+
+%transition-slider {
+  transition: all 1s ease-out;
+}
+
+@keyframes modal-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
