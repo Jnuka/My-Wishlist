@@ -6,12 +6,6 @@ export const cardsJson = [
     "description": "https://www.wildberries.ru/catalog/251021712/detail.aspx?targetUrl=SN",
   },
   {
-    "img": "./../../assets/img/gifts/02.PNG",
-    "type": "handwork",
-    "title": "Набор для вышивания Лиса",
-    "description": "https://www.wildberries.ru/catalog/248924047/detail.aspx?targetUrl=SN",
-  },
-  {
     "img": "./../../assets/img/gifts/03.PNG",
     "type": "books",
     "title": "Сказания Древней Японии. Мифы и легенды. Коллекционное",
@@ -28,12 +22,6 @@ export const cardsJson = [
     "type": "handwork",
     "title": "Подарочный набор для каллиграфии Гарри Потер",
     "description": "https://www.wildberries.ru/catalog/215823832/detail.aspx?targetUrl=SN",
-  },
-  {
-    "img": "./../../assets/img/gifts/06.PNG",
-    "type": "handwork",
-    "title": "Набор для скрапбукинга",
-    "description": "https://www.wildberries.ru/catalog/174812348/detail.aspx?targetUrl=SN",
   },
   {
     "img": "./../../assets/img/gifts/07.PNG",
@@ -70,24 +58,6 @@ export const cardsJson = [
     "type": "handwork",
     "title": 'Сургуч "звездочки" Золотой перламутровый / 250 шт',
     "description": "https://www.wildberries.ru/catalog/180316591/detail.aspx?targetUrl=SN",
-  },
-  {
-    "img": "./../../assets/img/gifts/13.PNG",
-    "type": "handwork",
-    "title": "Набор для сборки пазлов",
-    "description": "https://www.wildberries.ru/catalog/149052344/detail.aspx?targetUrl=SN",
-  },
-  {
-    "img": "./../../assets/img/gifts/14.PNG",
-    "type": "clothes",
-    "title": "Шапка бини вязаная из хлопка весна",
-    "description": "https://www.wildberries.ru/catalog/74033814/detail.aspx?targetUrl=SN",
-  },
-  {
-    "img": "./../../assets/img/gifts/15.PNG",
-    "type": "kitchen",
-    "title": "Дуршлаг силиконовый",
-    "description": "https://www.wildberries.ru/catalog/106282559/detail.aspx?targetUrl=SN",
   },
   {
     "img": "./../../assets/img/gifts/16.PNG",

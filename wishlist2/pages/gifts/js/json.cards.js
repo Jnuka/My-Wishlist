@@ -31,29 +31,11 @@ export const cardsJson = [
     "description": "https://www.wildberries.ru/catalog/182697244/detail.aspx?targetUrl=SN",
   },
   {
-    "img": "./../../assets/img/gifts/06.PNG",
-    "type": "clothes",
-    "title": "Носки теплые зимние пушистые куница 5 пар",
-    "description": "https://www.wildberries.ru/catalog/198146513/detail.aspx?targetUrl=SN",
-  },
-  {
     "img": "./../../assets/img/gifts/07.PNG",
     "type": "books",
     "title": "Закладки для книг самоклеящиеся, 12 шт",
     "description": "https://www.wildberries.ru/catalog/268288550/detail.aspx?targetUrl=SN",
-  },
-  {
-    "img": "./../../assets/img/gifts/08.PNG",
-    "type": "clothes",
-    "title": "Серьги бижутерия круглые гвоздики пусеты",
-    "description": "https://www.wildberries.ru/catalog/161755500/detail.aspx?targetUrl=SN",
-  },  
-  {
-    "img": "./../../assets/img/gifts/09.PNG",
-    "type": "kitchen",
-    "title": "Круповарка MIKU для микроволновой печи, набор посуды",
-    "description": "https://www.wildberries.ru/catalog/144627335/detail.aspx?targetUrl=SN",
-  },  
+  }, 
   {
     "img": "./../../assets/img/gifts/10.PNG",
     "type": "home",
@@ -71,13 +53,7 @@ export const cardsJson = [
     "type": "home",
     "title": "Стивен Кинг ароматическая свеча",
     "description": "https://www.wildberries.ru/catalog/133780268/detail.aspx?targetUrl=SN",
-  },  
-  {
-    "img": "./../../assets/img/gifts/13.PNG",
-    "type": "clothes",
-    "title": "Серьги конго трансформеры кольца в подарок бижутерия",
-    "description": "https://www.wildberries.ru/catalog/199744366/detail.aspx?targetUrl=SN",
-  },  
+  }, 
   {
     "img": "./../../assets/img/gifts/14.PNG",
     "type": "books",
@@ -97,21 +73,9 @@ export const cardsJson = [
     "description": "https://www.wildberries.ru/catalog/66382517/detail.aspx?targetUrl=SN",
   },  
   {
-    "img": "./../../assets/img/gifts/17.PNG",
-    "type": "home",
-    "title": "Конструктор 3D из миниблоков, Наруто",
-    "description": "https://www.wildberries.ru/catalog/198738714/detail.aspx?targetUrl=SN",
-  },  
-  {
     "img": "./../../assets/img/gifts/18.PNG",
     "type": "clothes",
     "title": "Косметичка маленькая в сумку на магните",
     "description": "https://www.wildberries.ru/catalog/98507954/detail.aspx?targetUrl=SN",
-  },  
-  {
-    "img": "./../../assets/img/gifts/19.PNG",
-    "type": "books",
-    "title": "Книга рецептов аниме Хаяо Миядзаки и студии «Гибли»",
-    "description": "https://www.wildberries.ru/catalog/194009931/detail.aspx?targetUrl=SN",
   },  
 ];
